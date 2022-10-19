@@ -15,7 +15,7 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(45deg, #a5a8ff, #27eefc, #a6ffc2, #7fcaff);
+  background: linear-gradient(-45deg, #ff9fdd, #55d4ff, #b8ffab, #a4ffc1);
   background-size: 200% 200%;
   -webkit-animation: gradient 20s ease infinite;
           animation: gradient 20s ease infinite;
