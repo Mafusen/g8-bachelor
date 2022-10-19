@@ -78,24 +78,22 @@ h1 {
     color: rgba(0, 0, 0, 0.658);
 }
 
-
-
 .profilkort {
     box-shadow: 0 18px 200px -60px black;
     border-radius: 50px;
-    width: 1700px;
+    max-width: 1800px;
     position: relative;
     backdrop-filter: blur(50px);
     border: 2px solid #ffffff60;
     padding: 3rem 5rem;
     gap: 40px;
     background-color: rgba(255, 255, 255, 0.216);
-
+    margin: 5rem;
+    margin-top: 3rem;
 
 
     @media screen and (max-width: 768px) {
         width: auto;
-
     }
 
 
@@ -136,7 +134,7 @@ h1 {
         display: flex;
         flex-direction: column;
         //gap: 50px;
-        padding-top: 25px;
+        padding-top: 0px;
         padding-left: 1.8rem;
         padding-right: 1.8rem;
 
@@ -158,8 +156,7 @@ h1 {
 
     .aboutme {
         font-size: 18px;
-        min-height: 430px;
-        width: 300px;
+        min-height: 450px;
         padding-top: 30px;
     }
 
@@ -237,7 +234,8 @@ h1 {
             display: inline-flex;
             width: 55px;
             height: 55px;
-            margin: 40px;
+            margin-top: 50px;
+            margin-bottom: 25px;
             border-radius: 30%;
             align-items: center;
             justify-content: center;
@@ -297,10 +295,10 @@ h1 {
 
             &.blue {
                 background: linear-gradient(45deg, #00a868, #0edb86);
-                box-shadow: 0 4px 30px rgba(104, 104, 104, 0.4);
+                box-shadow: 0 4px 30px rgba(0, 119, 59, 0.4);
 
                 &:hover {
-                    box-shadow: 0 7px 30px rgba(59, 59, 59, 0.75);
+                    box-shadow: 0 7px 30px rgba(0, 120, 56, 0.75);
                 }
             }
         }
