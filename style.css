@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+body {
+  font: 18px "Nunito", sans-serif;
+  color: black;
+  min-height: 100vh;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(-45deg, #ffab92, #53d1ff, #7fffe1);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 30s ease infinite;
+          animation: gradient 30s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*
+    &::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background: url("bg.jpg") no-repeat center;
+        background-size: cover;
+        animation: gradient 20s forwards;
+    }
+}
+@keyframes backgroundZoomAnimate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+*/
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  color: black;
+  padding-bottom: 25px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1400px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile {
+    padding-bottom: 60px;
+  }
+}
+.profile {
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.profilkort {
+  box-shadow: 0 18px 200px -60px black;
+  border-radius: 50px;
+  width: 1700px;
+  position: relative;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border: 2px solid rgba(255, 255, 255, 0.3764705882);
+  padding: 3rem 5rem;
+  gap: 40px;
+  background-color: rgba(255, 255, 255, 0.154);
+}
+@media screen and (max-width: 768px) {
+  .profilkort {
+    width: auto;
+  }
+}
+.profilkort__img img {
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.8745098039);
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  box-shadow: 0 10px 60px -10px rgba(13, 28, 39, 0.5);
+}
+.profilkort__desc {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+.profilkort__desc h2 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  padding-bottom: 0px;
+}
+.profilkort__desc h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 0px;
+}
+.profilkort .aboutme {
+  font-size: 18px;
+  min-height: 430px;
+  width: 300px;
+  padding-top: 30px;
+}
+@media screen and (max-width: 1400px) {
+  .profilkort .aboutme {
+    min-height: 0px;
+  }
+}
+.profilkort__info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media screen and (max-width: 576px) {
+  .profilkort__info {
+    gap: 30px;
+  }
+}
+.profilkort__info > div {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.profilkort__info > div > *:first-child {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+.profilkort__info > div > *:nth-child(2) {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.profilkort__info > div > *:nth-child(2):hover {
+  transform: scale(1.1) translateY(-1px);
+}
+.profilkort__info > div > *:last-child {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+.profilkort__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+.profilkort__social a {
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  margin: 40px;
+  border-radius: 30%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .profilkort__social a {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profilkort__social a:hover {
+    transform: scale(1.2) translateY(-2px);
+  }
+}
+.profilkort__social a.linkedin {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+.profilkort__social a.instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306C, #fd1d1d);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7);
+}
+.profilkort__social a.github {
+  background: linear-gradient(45deg, #333333, #626b73);
+  box-shadow: 0 4px 30px rgba(63, 65, 67, 0.6);
+}
+.profilkort__knapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 576px) {
+  .profilkort__knapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+.profilkort__knapper > button {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px 0;
+  min-width: 250px;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .profilkort__knapper > button {
+    min-width: 170px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .profilkort__knapper > button {
+    min-width: 175px;
+    width: 100px;
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .profilkort__knapper > button:hover {
+    transform: translateY(-5px);
+  }
+}
+.profilkort__knapper > button.blue {
+  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+}
+.profilkort__knapper > button.blue:hover {
+  box-shadow: 0 7px 30px rgba(19, 127, 212, 0.75);
+}/*# sourceMappingURL=style.css.map */
