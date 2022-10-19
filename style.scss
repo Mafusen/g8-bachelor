@@ -76,6 +76,7 @@ h1 {
 .madeby {
     justify-content: center;
     color: rgba(0, 0, 0, 0.658);
+    text-align: center;
 }
 
 .profilkort {
@@ -138,8 +139,7 @@ h1 {
         flex-direction: column;
         //gap: 50px;
         padding-top: 0px;
-        padding-left: 1.8rem;
-        padding-right: 1.8rem;
+
 
 
         h2 {
@@ -161,6 +161,8 @@ h1 {
         font-size: 18px;
         min-height: 450px;
         padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     @media only screen and (max-width: 1800px) {
@@ -177,8 +179,9 @@ h1 {
         .aboutme {
             min-height: 0px;
             width: auto;
-            padding-left: 3rem;
-            padding-right: 3rem;
+            padding-right: 0px;
+            padding-left: 0px;
+
     }
 }
 
@@ -231,7 +234,7 @@ h1 {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding-bottom: 25px;
+    
 
         a {
             display: inline-flex;
@@ -250,8 +253,8 @@ h1 {
             @media screen and (max-width: 768px) {
                 width: 50px;
                 height: 50px;
-                margin: 10px;
             }
+
             @media screen and (min-width: 768px) {
                 &:hover {
                     transform: scale(1.4) translateY(-2px);

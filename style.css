@@ -84,6 +84,7 @@ h1 {
 .madeby {
   justify-content: center;
   color: rgba(0, 0, 0, 0.658);
+  text-align: center;
 }
 
 .profilkort {
@@ -141,8 +142,6 @@ h1 {
   display: flex;
   flex-direction: column;
   padding-top: 0px;
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
 }
 .profilkort__desc h2 {
   font-size: 2.1rem;
@@ -158,6 +157,8 @@ h1 {
   font-size: 18px;
   min-height: 450px;
   padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 @media only screen and (max-width: 1800px) {
   .profilkort .row {
@@ -173,8 +174,8 @@ h1 {
   .profilkort .aboutme {
     min-height: 0px;
     width: auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
 .profilkort__info {
@@ -219,7 +220,6 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 25px;
 }
 .profilkort__social a {
   display: inline-flex;
@@ -239,7 +239,6 @@ h1 {
   .profilkort__social a {
     width: 50px;
     height: 50px;
-    margin: 10px;
   }
 }
 @media screen and (min-width: 768px) {
