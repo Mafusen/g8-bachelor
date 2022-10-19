@@ -73,25 +73,6 @@ h1 {
   padding-bottom: 25px;
 }
 
-.madeby {
-  justify-content: center;
-  color: rgba(0, 0, 0, 0.658);
-}
-
-.box {
-  border: 30px solid white;
-  width: 1400px;
-  border-radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 80px;
-  background-color: white;
-  justify-content: center;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.09);
-}
-
 .about {
   display: flex;
   justify-content: center;
@@ -100,26 +81,9 @@ h1 {
   font-size: 20px;
 }
 
-.row {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-@media only screen and (max-width: 1400px) {
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .profile {
-    padding-bottom: 60px;
-  }
-  .box {
-    width: auto;
-  }
-}
-.profile {
-  min-width: 300px;
-  max-width: 400px;
+.madeby {
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.658);
 }
 
 .profilkort {
@@ -138,6 +102,39 @@ h1 {
   .profilkort {
     width: auto;
   }
+}
+.profilkort .box {
+  border: 30px solid white;
+  width: 1400px;
+  border-radius: 50px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  background-color: white;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.09);
+}
+.profilkort .row {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 1400px) {
+  .profilkort .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profilkort .profile {
+    padding-bottom: 60px;
+  }
+  .profilkort .box {
+    width: auto;
+  }
+}
+.profilkort .profile {
+  min-width: 300px;
+  max-width: 400px;
 }
 .profilkort__img img {
   margin: auto;
