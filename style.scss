@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900&display=swap');
 
 
-
 body {
     font: 18px "Nunito", sans-serif;
     color: black;
@@ -64,8 +63,6 @@ h1 {
     text-align: center;
     color: black;
     padding-bottom: 25px;
-
-
 }
 
 .about {
@@ -93,16 +90,18 @@ h1 {
     padding: 3rem 5rem;
     gap: 40px;
     background-color: rgba(255, 255, 255, 0.216);
+    margin: 50px;
 
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1800px) {
         width: auto;
+
     }
 
 
     .box {
         border: 30px solid white;
-        width: 1400px;
+        width: auto;
         border-radius: 50px;
         margin-top: 60px;
         margin-bottom: 80px;
@@ -113,31 +112,12 @@ h1 {
         margin-right: auto;
         box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.09);
     }
-    
-    
+
     
     .row {
         display: flex;
         justify-content: space-evenly;
-    }
-    
-    @media only screen and (max-width: 1400px) {
-        .row {
-            flex-direction: column;
-            align-items: center;
-        }
-        .profile {
-            padding-bottom: 60px;
-        }
-        .box {
-            width: auto;
-        }
-        
-    }
-    
-    .profile {
-        min-width: 300px;
-        max-width: 400px;
+        width: auto;
     }
 
     &__img img {
@@ -183,11 +163,22 @@ h1 {
         padding-top: 30px;
     }
 
-    @media screen and (max-width: 1400px) {
-            .aboutme {
-                min-height: 0px;
+    @media only screen and (max-width: 1800px) {
+        .row {
+            flex-direction: column;
+            align-items: center;
         }
+        .profile {
+            padding-bottom: 60px;
+        }
+        .box {
+            width: auto;
+        }
+        .aboutme {
+            min-height: 0px;
+            min-width: 800px;
     }
+}
 
     &__info {
         display: flex;
@@ -284,12 +275,6 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
-
-        @media screen and (max-width: 576px) {
-            flex-direction: column;
-            gap: 1.5rem;
-        }
 
         &>button {
             font-weight: bold;
@@ -302,16 +287,6 @@ h1 {
             cursor: pointer;
             transition: all .2s;
 
-            @media screen and (max-width: 768px) {
-                min-width: 170px;
-            }
-
-            @media screen and (max-width: 576px) {
-                min-width: 175px;
-                width: 100px;
-                max-width: 350px;
-            }
-
             @media screen and (min-width: 576px) {
                 &:hover {
                     transform: translateY(-5px);
@@ -319,11 +294,11 @@ h1 {
             }
 
             &.blue {
-                background: linear-gradient(45deg, #1da1f2, #0e71c8);
-                box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+                background: linear-gradient(45deg, #00ad6b, #11f496);
+                box-shadow: 0 4px 30px rgba(19, 115, 212, 0.4);
 
                 &:hover {
-                    box-shadow: 0 7px 30px rgba(19, 127, 212, 0.75);
+                    box-shadow: 0 7px 30px rgba(66, 169, 253, 0.75);
                 }
             }
         }

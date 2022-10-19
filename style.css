@@ -97,15 +97,16 @@ h1 {
   padding: 3rem 5rem;
   gap: 40px;
   background-color: rgba(255, 255, 255, 0.216);
+  margin: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1800px) {
   .profilkort {
     width: auto;
   }
 }
 .profilkort .box {
   border: 30px solid white;
-  width: 1400px;
+  width: auto;
   border-radius: 50px;
   margin-top: 60px;
   margin-bottom: 80px;
@@ -119,22 +120,7 @@ h1 {
 .profilkort .row {
   display: flex;
   justify-content: space-evenly;
-}
-@media only screen and (max-width: 1400px) {
-  .profilkort .row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .profilkort .profile {
-    padding-bottom: 60px;
-  }
-  .profilkort .box {
-    width: auto;
-  }
-}
-.profilkort .profile {
-  min-width: 300px;
-  max-width: 400px;
+  width: auto;
 }
 .profilkort__img img {
   margin: auto;
@@ -171,9 +157,20 @@ h1 {
   width: 300px;
   padding-top: 30px;
 }
-@media screen and (max-width: 1400px) {
+@media only screen and (max-width: 1800px) {
+  .profilkort .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profilkort .profile {
+    padding-bottom: 60px;
+  }
+  .profilkort .box {
+    width: auto;
+  }
   .profilkort .aboutme {
     min-height: 0px;
+    min-width: 800px;
   }
 }
 .profilkort__info {
@@ -261,13 +258,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-}
-@media screen and (max-width: 576px) {
-  .profilkort__knapper {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
 }
 .profilkort__knapper > button {
   font-weight: bold;
@@ -280,27 +270,15 @@ h1 {
   cursor: pointer;
   transition: all 0.2s;
 }
-@media screen and (max-width: 768px) {
-  .profilkort__knapper > button {
-    min-width: 170px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .profilkort__knapper > button {
-    min-width: 175px;
-    width: 100px;
-    max-width: 350px;
-  }
-}
 @media screen and (min-width: 576px) {
   .profilkort__knapper > button:hover {
     transform: translateY(-5px);
   }
 }
 .profilkort__knapper > button.blue {
-  background: linear-gradient(45deg, #1da1f2, #0e71c8);
-  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+  background: linear-gradient(45deg, #00ad6b, #11f496);
+  box-shadow: 0 4px 30px rgba(19, 115, 212, 0.4);
 }
 .profilkort__knapper > button.blue:hover {
-  box-shadow: 0 7px 30px rgba(19, 127, 212, 0.75);
+  box-shadow: 0 7px 30px rgba(66, 169, 253, 0.75);
 }/*# sourceMappingURL=style.css.map */
