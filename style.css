@@ -15,10 +15,10 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(-45deg, #ffab92, #53d1ff, #7fffe1);
-  background-size: 400% 400%;
-  -webkit-animation: gradient 30s ease infinite;
-          animation: gradient 30s ease infinite;
+  background: linear-gradient(45deg, #a5a8ff, #27eefc, #a6ffc2, #7fcaff);
+  background-size: 200% 200%;
+  -webkit-animation: gradient 20s ease infinite;
+          animation: gradient 20s ease infinite;
 }
 
 @-webkit-keyframes gradient {
@@ -97,7 +97,6 @@ h1 {
   padding: 3rem 5rem;
   gap: 40px;
   background-color: rgba(255, 255, 255, 0.216);
-  margin: 50px;
 }
 @media screen and (max-width: 1800px) {
   .profilkort {
@@ -170,7 +169,9 @@ h1 {
   }
   .profilkort .aboutme {
     min-height: 0px;
-    min-width: 800px;
+    width: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 .profilkort__info {
@@ -276,9 +277,9 @@ h1 {
   }
 }
 .profilkort__knapper > button.blue {
-  background: linear-gradient(45deg, #00ad6b, #11f496);
-  box-shadow: 0 4px 30px rgba(19, 115, 212, 0.4);
+  background: linear-gradient(45deg, #00a868, #0edb86);
+  box-shadow: 0 4px 30px rgba(104, 104, 104, 0.4);
 }
 .profilkort__knapper > button.blue:hover {
-  box-shadow: 0 7px 30px rgba(66, 169, 253, 0.75);
+  box-shadow: 0 7px 30px rgba(59, 59, 59, 0.75);
 }/*# sourceMappingURL=style.css.map */
