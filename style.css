@@ -21,6 +21,11 @@ body::before {
           animation: gradient 20s ease infinite;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+}
 @-webkit-keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -32,7 +37,6 @@ body::before {
     background-position: 0% 50%;
   }
 }
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -105,7 +109,7 @@ h1 {
     padding: 1rem 2rem;
   }
   .profilkort h1 {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 .profilkort .box {
@@ -170,6 +174,7 @@ h1 {
   }
   .profilkort .box {
     width: auto;
+    margin-top: 10px;
   }
   .profilkort .aboutme {
     min-height: 0px;
