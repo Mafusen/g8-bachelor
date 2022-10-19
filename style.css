@@ -8,6 +8,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*
+  &::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: url("assets/bg2.webp") no-repeat center;
+      background-size: cover;
+      animation: gradient 20s forwards;
+  }
+  */
 }
 body::before {
   content: "";
@@ -15,17 +27,12 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(-45deg, #ff9fdd, #55d4ff, #b8ffab, #a4ffc1);
+  background: linear-gradient(-45deg, #ff9fdd, #55d4ff, #d0f8c9, #81fdff);
   background-size: 200% 200%;
   -webkit-animation: gradient 20s ease infinite;
           animation: gradient 20s ease infinite;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-}
 @-webkit-keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -37,6 +44,7 @@ body::before {
     background-position: 0% 50%;
   }
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -49,17 +57,6 @@ body::before {
   }
 }
 /*
-    &::before {
-        content: '';
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        pointer-events: none;
-        background: url("bg.jpg") no-repeat center;
-        background-size: cover;
-        animation: gradient 20s forwards;
-    }
-}
 @keyframes backgroundZoomAnimate {
     from {
         transform: scale(1);
@@ -69,6 +66,11 @@ body::before {
     }
 }
 */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+}
 h1 {
   font-size: 50px;
   font-weight: 900;
@@ -96,12 +98,12 @@ h1 {
   border-radius: 50px;
   max-width: 1800px;
   position: relative;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  border: 2px solid rgba(255, 255, 255, 0.3764705882);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5137254902);
   padding: 3rem 5rem;
   gap: 40px;
-  background-color: rgba(255, 255, 255, 0.216);
+  background-color: rgba(255, 255, 255, 0.613);
 }
 @media screen and (max-width: 768px) {
   .profilkort {
@@ -135,7 +137,7 @@ h1 {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.8745098039);
+  border: 5px solid #ffffff;
   -o-object-fit: cover;
      object-fit: cover;
   display: flex;
