@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900&display=swap');
+
+
 
 body {
     font: 18px "Nunito", sans-serif;
@@ -6,6 +8,7 @@ body {
     min-height: 100vh;
     padding: 5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -61,14 +64,34 @@ h1 {
     text-align: center;
     color: black;
     padding-bottom: 25px;
+
+
+}
+.madeby {
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.box {
+    border: 30px solid white;
+    width: 1400px;
+    border-radius: 50px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.09);
 }
 
 .about {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-bottom: 100px;
-    padding-top: 50px;
+    font-style: italic;
+    font-size: 20px;
 }
 
 .row {
@@ -83,6 +106,9 @@ h1 {
     }
     .profile {
         padding-bottom: 60px;
+    }
+    .box {
+        width: auto;
     }
     
 }
@@ -102,7 +128,7 @@ h1 {
     border: 2px solid #ffffff60;
     padding: 3rem 5rem;
     gap: 40px;
-    background-color: rgba(255, 255, 255, 0.154);
+    background-color: rgba(255, 255, 255, 0.216);
 
 
     @media screen and (max-width: 768px) {
@@ -229,12 +255,12 @@ h1 {
             }
             @media screen and (min-width: 768px) {
                 &:hover {
-                    transform: scale(1.2) translateY(-2px);
+                    transform: scale(1.4) translateY(-2px);
                 }
             }
 
             &.linkedin {
-                background: linear-gradient(45deg, #3b5998, #0078d7);
+                background: linear-gradient(45deg, #324e8b, #30a2ff);
                 box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
             }
 
@@ -297,4 +323,5 @@ h1 {
             }
         }
     }
+
 }
